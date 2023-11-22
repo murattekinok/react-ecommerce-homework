@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/home.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./Home_files/styles.css"> <!-- İsteğe bağlı: CSS dosyanızın yolu -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://127.0.0.1:5500/home.html#"><img src="./Home_files/logo.png" alt="Logo" style="
+    width: 100px;
+"></a> <!-- Use an <a> tag to add a logo or icon --> <!-- Use an <a> tag to add a logo or icon -->
+            <ul>
+                <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome!</h1>
+        <p>Welcome to our E-Commerce Website. You can find the Best Products here.</p>
+    </header>
+    
+    <!-- Home sayfasının içeriği buraya eklenecek -->
+  
+<section class="content">
+    <h2>Welcome to Our E-Commerce Website</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac feugiat purus. Curabitur convallis massa nec vestibulum. Nam eget urna vehicula, facilisis massa eu, fermentum libero. Donec dignissim bibendum felis, ac vestibulum enim malesuada eget.</p>
+
+    <h3>Our Products</h3>
+    <p>Check out our wide range of products. We offer the best quality and great deals on all items. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <h3>Why Choose Us?</h3>
+    <p>We take pride in our excellent customer service and high-quality products. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada bibendum arcu, nec bibendum tortor cursus eu.</p>
+</section>
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<footer>
+    <p>© 2023 My Website. All rights reserved.</p>
+</footer>
+
+</body></html>

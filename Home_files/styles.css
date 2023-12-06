@@ -1,5 +1,5 @@
 #logo-container {
-    max-width: 50px; /* Logo maksimum genişlik */
+    max-width: 30px; /* Logo maksimum genişlik */
     margin: 10px; /* Logo kenar boşluğu */
 }
 
@@ -68,7 +68,7 @@ footer {
 
 /* Eklenen stil tanımlamaları */
 #logo-container {
-    max-width: 50px; /* Logo maksimum genişlik */
+    max-width: 30px; /* Logo maksimum genişlik */
     margin: 10px; /* Logo kenar boşluğu */
 }
 
